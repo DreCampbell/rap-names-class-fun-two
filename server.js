@@ -30,10 +30,10 @@ app.get('/', (request, response)=>{
 app.get('/api/:rapperName', (request, response)=>{
     const rappersName = request.params.rapperName.toLowerCase()
     if(rappers[rappersName]){
-    response.json(rappers[rappersName])
+        response.json(rappers[rappersName])
     }else{
-    response.json(rappers['dylan'])
-}
+        response.json(rappers['dylan'])
+    }
 })
 
 app.listen(process.env.PORT || PORT, ()=>{
