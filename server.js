@@ -16,6 +16,11 @@ const rappers = {
         'birthName': 'Michael Ebenezer Kwadjo Omari Owuo Jr.',
         'birthLoaction': 'London, England'
     },
+    'skepta':{
+        'age': 40,
+        'birthName': 'Joseph Olaitan Adenuga Jr.',
+        'birthLoaction': 'London, England'
+    },
     'dylan':{
         'age': 30,
         'birthName': 'Dylan',
@@ -39,3 +44,4 @@ app.get('/api/:rapperName', (request, response)=>{
 app.listen(process.env.PORT || PORT, ()=>{
     console.log(`The server is running on ${PORT}! You better go catch it!`)
 })
+
